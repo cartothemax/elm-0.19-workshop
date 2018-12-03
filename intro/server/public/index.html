@@ -22,12 +22,6 @@
   </head>
   <body>
     <script>
-      // 👋 Hi there!
-      //
-      // If you're working on the JS interop exercise for part9,
-      // all the info you need on the JS side is in this <script> right here.
-      //
-      // On the Elm side, you'll need to make changes to `part9/src/Session.elm`.
       localforage.getItem("session", function(err, session) {
         var app = Elm.Main.init({flags: session});
 
